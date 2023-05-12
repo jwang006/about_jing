@@ -31,6 +31,18 @@ p{
     width: 40%;
     margin-top: 100px;
   } */
+  .AAAheader {
+    background-color: #036437;
+  }
+  .middle {
+    background-color: #e60c99;
+    width: 50%;
+    font-size:100%;
+    text-align: justify; 
+    margin-left: 300px;
+    }
+    
+    
 
 .left-half {
     background-color: #ffffff;
