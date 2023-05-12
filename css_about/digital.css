@@ -1,0 +1,104 @@
+/* tutorial for centering the canvas 
+https://github.com/processing/p5.js/wiki/Positioning-your-canvas
+ */
+html, body {
+    height: 100%;
+    background-color: white;
+  }
+  
+  a{
+    text-align: center;
+  }
+p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* 
+  .left-half {
+    background-color: #f00000;
+    position:relative;
+    display: center;
+    left: 60px;
+    width: 60%;
+    margin-top: 100px;
+  }
+  
+  .right-half {
+    background-color: #02a6ff;
+    position:relative;
+    display: center;
+    right: 10px;
+    width: 40%;
+    margin-top: 100px;
+  } */
+
+.left-half {
+    background-color: #ffffff;
+    margin-top: 50px;
+    float:left;
+    width: 60%;
+}
+.right-half {
+  background-color: #00f080;
+  float:right;
+  width: 40%;
+}
+
+
+  #gui-container{
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  #sketch-container{
+
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .button{
+    background-color: #f6d781;
+    border: solid 0px ;
+    border-radius: 2px;
+    color: white;
+    padding:10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    /* margin: 80%;; */
+    margin-right: auto; 
+    font-size: 16px;
+    min-width: 50px;
+    cursor: pointer;
+  }
+  .button:hover{
+    background-color:white;
+    color: #f6d781;
+  }
+  .button.inactive{
+    cursor:default;
+    background-color: lightgray;
+    border-color: lightgray;
+    color: white;
+  }
+
+
+
+/* experience  */
+.experience {
+  display: flex; 
+  margin-left: 0px; 
+  /* padding-top: 5%; */
+}
+.experience p {
+  display: inline-block; 
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin-right: 30px; 
+  font-weight: bolder;
+}
