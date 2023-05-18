@@ -1,14 +1,15 @@
 /* tutorial for centering the canvas 
 https://github.com/processing/p5.js/wiki/Positioning-your-canvas
  */
-html, body {
+ body {
     height: 100%;
     background-color: white;
+    font-family: Verdana, sans-serif;
+    margin: 0;
   }
-  
-  a{
-    text-align: center;
-  }
+
+
+
 p{
   margin-left: 20px;
   margin-right: 20px;
@@ -31,9 +32,30 @@ p{
     width: 40%;
     margin-top: 100px;
   } */
-  .AAAheader {
-    background-color: #036437;
-  }
+
+
+  main,
+header{
+    width:100%;
+    max-width:1400px; /* means it won't be larger than 1200px on larger screens */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 3%;
+}
+
+nav{
+    padding:10px 3%;
+}
+  
+nav a:hover {
+  text-decoration: underline;
+}
+h1{
+  font-size: 30px;
+}
+h4{
+  background-color: #ffffff;
+}
   .middle {
     background-color: #e60c99;
     width: 50%;
