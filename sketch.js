@@ -58,7 +58,8 @@ function draw() {
   }
   else {
     thinking = false;
-    button.html("WHO AM I?  ");
+    // button.html("🔘 👉🏻 WHO AM I?  ");
+    button.html("👉🏻 WHO AM I?  ");
     button.removeClass("inactive");
   }
 }
