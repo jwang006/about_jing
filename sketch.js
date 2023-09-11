@@ -30,7 +30,7 @@ function handleButtonPress() {
   glassY = random (-15,-8);
   handY = random (180,210);
   console.log("Pressed");
-  button.html("Ohhh!");
+  button.html("Contributing for Arts!");
 
   button.addClass("inactive");
  }
@@ -59,7 +59,7 @@ function draw() {
   else {
     thinking = false;
     // button.html("🔘 👉🏻 WHO AM I?  ");
-    button.html("👉🏻 WHO AM I?  ");
+    button.html("👉🏻 Where is her hair? ");
     button.removeClass("inactive");
   }
 }
