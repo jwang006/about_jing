@@ -1,0 +1,629 @@
+/*This is a comment in CSS*/
+
+body{
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+h1{
+  font-size: 30px;
+}
+h3{
+  background-color: #ffffff;
+}
+p{
+  font-size: 16px;
+}
+
+/* a:hover{
+  text-decoration: underline;
+}  */
+
+
+main,
+header{
+    width:100%;
+    max-width:1400px; /* means it won't be larger than 1200px on larger screens */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 3%;
+}
+
+nav{
+    padding:10px 3%;
+}
+
+/* nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color: grey;
+} */
+
+.center-text{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+a.hover{
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+/* invert images*/
+.flex-container{
+  display: flex; /* all children will now be flex items */
+  flex-direction: row; /* other option is column */
+  flex-wrap: wrap; /* means the children will wrap to a new line */
+}
+
+
+.flex-item-Ants{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-Ants{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-Ants a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/ants_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-Ants a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+.flex-item-HandleMe{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-HandleMe{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-HandleMe a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/handleMe_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-HandleMe a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+.flex-item-Another{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-Another{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-Another a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/another_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-Another a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+.flex-container_SPIDERLAND{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-container_SPIDERLAND{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-container_SPIDERLAND a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/spider_cover_2.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-container_SPIDERLAND a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+
+
+
+.flex-container_MOSS{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-container_MOSS{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-container_MOSS a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/MOSS_COVER.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-container_MOSS a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+
+
+.flex-container-Flow{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-container-Flow{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-container-Flow a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/flow_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-container-Flow a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+.flex-item-Uploading{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-Uploading{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-Uploading a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/uploading_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-Uploading a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.flex-item-water{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-water{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-water a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/water.png); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-water a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+.flex-item-sound{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-sound{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-sound a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/sound_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-sound a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+
+
+.flex-item-heal{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-heal{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-heal a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/healing_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-heal a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-item{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/lightgrey-line.jpeg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+.flex-basis-third .flex-item{
+  flex-basis: 33.33%; 
+}
+
+.flex-basis-half .flex-item{
+  flex-basis: 50%; 
+}
+
+/* Media Queries for responsive design */
+
+/* Un-comment the body background-colors to see bold debug color change between screen sizes */
+
+/* Extra large */
+@media screen and (max-width: 1200px) {
+  /* body { */
+    /* background-color: rgb(205, 247, 232); */
+  /* }  */
+
+  .flex-item{
+      flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+  }
+}
+
+/* Large */
+@media screen and (max-width: 992px) {
+  /* body {
+    background-color: rgb(255, 81, 0);
+  } */
+
+}
+
+/* Medium */
+@media screen and (max-width: 768px) {
+  /* body {
+    background-color: rgb(255, 0, 191);
+  } */
+
+  .flex-item{
+      flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+  }
+}
+
+/* Small */
+@media screen and (max-width: 576px) {
+  /* body {
+    background-color: blue;
+  } */
+
+  .flex-item{
+      flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+  }
+}
