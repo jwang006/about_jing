@@ -13,26 +13,8 @@ https://github.com/processing/p5.js/wiki/Positioning-your-canvas
 p{
   margin-left: 20px;
   margin-right: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* 
-  .left-half {
-    background-color: #f00000;
-    position:relative;
-    display: center;
-    left: 60px;
-    width: 60%;
-    margin-top: 100px;
-  }
-  
-  .right-half {
-    background-color: #02a6ff;
-    position:relative;
-    display: center;
-    right: 10px;
-    width: 40%;
-    margin-top: 100px;
-  } */
-
 
   main,
 header{
@@ -135,4 +117,32 @@ h4{
   font-size: 1rem;
   margin-right: 30px; 
   font-weight: bolder;
+}
+
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  /*color: #0087ca;*/
+  color: #000000;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  /*background-color: #0087ca;*/
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

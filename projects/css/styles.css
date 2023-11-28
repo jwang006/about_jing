@@ -438,6 +438,8 @@ a {
 
 
 
+
+
 .flex-item-Uploading{
   display: flex;
   /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
@@ -722,3 +724,33 @@ a {
       flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 }
+
+
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  /*color: #0087ca;*/
+  color: #000000;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  /*background-color: #0087ca;*/
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
